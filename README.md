@@ -2,7 +2,8 @@
 # Global Data Job Market Analysis & Dashboard
 ###  This project analyzes a comprehensive dataset of 30,672 global tech job postings from 2023 to uncover key market dynamics. Using Power Query, I extracted and appended twelve monthly salary sheets into a single, consolidated data model. This analysis explores the direct correlations between job titles, geographic locations, data skills, and median compensation, serving as a data-driven blueprint for understanding career trajectories in data science.
 # Project 1 Excel Salary Dashboard
-<img width="1900" height="982" alt="2026-06-18 (4)" src="https://github.com/user-attachments/assets/85a596da-3aae-40e0-9d34-4cc8feb9fd12" />
+<img width="1798" height="785" alt="1" src="https://github.com/user-attachments/assets/4e255d1b-2842-4ad6-9ae8-421e9aa97799" />
+
 
 
 ## Introduction
@@ -36,7 +37,8 @@ The dataset used for this project contains real-world data science job informati
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-<img width="599" height="375" alt="job title" src="https://github.com/user-attachments/assets/26b630ea-160d-4b24-9192-7a56fe90c6ca" />
+<img width="588" height="367" alt="6" src="https://github.com/user-attachments/assets/efe7fc32-257f-4056-bd22-2e6dc5705a82" />
+
 
 
 
@@ -63,7 +65,7 @@ The dataset used for this project contains real-world data science job informati
 ```
 =MEDIAN(
 IF(
-    (JOBS[job_title_short]=$B2)*
+    (JOBS[job_title_short]=$A2)*
     (JOBS[job_country]=COUNTRY)*
     (ISNUMBER(SEARCH(TYPE,jobs[job_schedule_type])))*
     (JOBS[salary_year_avg]<>0),
@@ -79,14 +81,17 @@ IF(
 
 🍽️ Background Table
 
-<img width="1042" height="457" alt="median" src="https://github.com/user-attachments/assets/c525d3f3-c6d2-42a8-96d5-76f0e4c1e20b" />
+<img width="1905" height="435" alt="4" src="https://github.com/user-attachments/assets/51d6c8b5-2197-4910-a79e-8f74c37f45fb" />
+
 
 📉 Dashboard Implementation
 
-<img width="547" height="450" alt="type" src="https://github.com/user-attachments/assets/e4b2e54d-500b-4589-a651-c17a22256ec1" />
+<img width="629" height="785" alt="2" src="https://github.com/user-attachments/assets/bd22a60d-ba85-47d7-928c-5ee21c858598" />
+
 
 
 #### ⏰ Count of Job Schedule Type
+<img width="558" height="367" alt="7" src="https://github.com/user-attachments/assets/a9aabee3-82a2-4e2b-9658-3cae07c64f0d" />
 
 ```
 =FILTER(A2#,NOT(ISNUMBER(SEARCH("and",A2#)))*(A2#<>0))
@@ -97,12 +102,14 @@ IF(
 
 🍽️ Background Table
 
-<img width="774" height="724" alt="filter" src="https://github.com/user-attachments/assets/37eab13a-20bc-4a46-a4ed-08b53ed994c5" />
+<img width="1879" height="455" alt="5" src="https://github.com/user-attachments/assets/20a19a3a-6f44-4e4d-b161-8feb517f835d" />
+
 
 
 📉 Dashboard Implementation:
 
-<img width="572" height="752" alt="type im" src="https://github.com/user-attachments/assets/6fc40bcf-384b-472c-b632-7589c3623866" />
+<img width="560" height="785" alt="3" src="https://github.com/user-attachments/assets/bef74d67-c123-447d-971f-c7332612ba21" />
+
 
 ### ❎ Data Validation
 
