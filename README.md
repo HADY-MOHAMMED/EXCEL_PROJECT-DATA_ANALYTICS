@@ -91,7 +91,7 @@ IF(
 
 
 #### ⏰ Count of Job Schedule Type
-<img width="558" height="367" alt="7" src="https://github.com/user-attachments/assets/a9aabee3-82a2-4e2b-9658-3cae07c64f0d" />
+
 
 ```
 =FILTER(A2#,NOT(ISNUMBER(SEARCH("and",A2#)))*(A2#<>0))
@@ -102,7 +102,8 @@ IF(
 
 🍽️ Background Table
 
-<img width="1879" height="455" alt="5" src="https://github.com/user-attachments/assets/20a19a3a-6f44-4e4d-b161-8feb517f835d" />
+<img width="1514" height="243" alt="8" src="https://github.com/user-attachments/assets/2f60a850-10af-40e4-9f55-b3bee596c7d4" />
+
 
 
 
