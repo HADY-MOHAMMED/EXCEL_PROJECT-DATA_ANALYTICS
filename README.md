@@ -298,7 +298,8 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 - 💰 Higher median salaries are associated with skills like Python, Oracle, and SQL, suggesting their critical role in high-paying tech jobs.
 - 📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
 
-    ![2_Project_Analysis_Chart4.png](/0_Resources/Images/2_Project_Analysis_Chart4.png)
+  <img width="614" height="364" alt="ASAP3" src="https://github.com/user-attachments/assets/b12743b2-bd09-49ca-b96b-3eda4b278d89" />
+
 
 ### 🤔So What
 
