@@ -46,7 +46,8 @@ The dataset used for this project contains real-world data science job informati
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-![1_Salary_Dashboard_Chart2.png](/0_Resources/Images/1_Salary_Dashboard_Country_Map.gif)
+<img width="511" height="360" alt="country" src="https://github.com/user-attachments/assets/b58d3ea0-44d0-48ca-b354-ffa996808c54" />
+
 
 - 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
@@ -76,12 +77,13 @@ IF(
 - **🔢 Formula Purpose:** This formula populates the table below, returning the median salary based on job title, country, and type specified.
 
 🍽️ Background Table
+<img width="1042" height="665" alt="median" src="https://github.com/user-attachments/assets/8ac3d34e-b0d5-427c-8119-6a8e1db2d2d6" />
 
-![1_Salary_Dashboard_Screenshot1.png](/0_Resources/Images/1_Salary_Dashboard_Screenshot1.png)
 
 📉 Dashboard Implementation
 
-<img src="/0_Resources/Images/1_Salary_Dashboard_Job_Title.png" width="400" height="500" alt="Salary Dashboard Title">
+<img width="547" height="450" alt="type" src="https://github.com/user-attachments/assets/e4b2e54d-500b-4589-a651-c17a22256ec1" />
+
 
 #### ⏰ Count of Job Schedule Type
 
