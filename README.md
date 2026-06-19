@@ -128,7 +128,7 @@ As a former job seeker, I’ve always been surprised by the lack of data explori
 
 To understand the data science job market, I asked the following:
 
-1. **Do more skills get you better pay?**
+1. **What are the top skills of data science?**
 2. **What’s the salary for data jobs in different regions?**
 3. **What are the top skills of data professionals?**
 4. **What’s the pay for the top 10 skills?**
@@ -154,7 +154,7 @@ It includes detailed information on:
 - **📍 Locations**
 - **🛠️ Skills**
 
-## 1️⃣ Do more skills get you better pay?
+## 1️⃣ What are the top skills of data science?
 
 ### 🔍 Skill: Power Query (ETL)
 
@@ -193,14 +193,17 @@ It includes detailed information on:
 
 #### 💡 Insights
 
-- 📈 There is a positive correlation between the number of skills requested in job postings and the median salary, particularly in roles like Senior Data Engineer and Data Scientist.
-- 💼 Roles that require fewer skills, like Business Analyst, tend to offer lower salaries, suggesting that more specialized skill sets command higher market value.
+- 👑 The Core Duopoly: SQL (18,500 jobs) and Python (17,689 jobs) heavily dominate the data science ecosystem, appearing in nearly triple the number of job postings compared to the next closest tool.
 
-    ![2_Project_Analysis_Chart1.png](/0_Resources/Images/2_Project_Analysis_Chart1.png)
+📊 The Mid-Tier Essentials: A highly competitive group composed of Tableau (7,013 jobs), R (6,929 jobs), and AWS (6,842 jobs) follows, showcasing a balanced market demand across data visualization, statistical programming, and cloud infrastructure.
+
+📈 Legacy vs. Big Data: Traditional data tools like Excel (6,258 jobs) still maintain a strong baseline presence, but are closely accompanied by specialized enterprise big data frameworks like Spark (5,274 jobs) and Azure (4,760 jobs).
+
+   <img width="623" height="394" alt="ANAP21" src="https://github.com/user-attachments/assets/cf795a1f-3818-4f59-af48-69e8513e30d9" />
+
 
 #### 🤔 So What
-
-- This trend emphasizes the value of acquiring multiple relevant skills, particularly for individuals aiming for higher-paying roles.
+This chart serves as a direct prioritization roadmap for a data professional's learning path. It clearly demonstrates that while mastering niche or advanced cloud architectures is highly valuable, building an airtight foundation in SQL and Python is an absolute non-negotiable step for baseline marketability, as they form the operational backbone of the vast majority of open market roles.
 
 ## 2️⃣ What’s the salary for data jobs in different regions?
 
