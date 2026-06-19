@@ -63,11 +63,11 @@ The dataset used for this project contains real-world data science job informati
 ```
 =MEDIAN(
 IF(
-    (jobs[job_title_short]=$B2)*
-    (jobs[job_country]=COUNTRY)*
+    (JOBS[job_title_short]=$B2)*
+    (JOBS[job_country]=COUNTRY)*
     (ISNUMBER(SEARCH(TYPE,jobs[job_schedule_type])))*
-    (jobs[salary_year_avg]<>0),
-    jobs[salary_year_avg]
+    (JOBS[salary_year_avg]<>0),
+    JOBS[salary_year_avg]
 )
 )
 ```
@@ -89,7 +89,7 @@ IF(
 #### ⏰ Count of Job Schedule Type
 
 ```
-=FILTER(A2#,(NOT(ISNUMBER(SEARCH("and",A2#))+ISNUMBER(SEARCH(",",A2#))))*(A2#<>0))
+=FILTER(A2#,NOT(ISNUMBER(SEARCH("and",A2#)))*(A2#<>0))
 ```
 
 - 🔍 **Unique List Generation:** This Excel formula below employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
