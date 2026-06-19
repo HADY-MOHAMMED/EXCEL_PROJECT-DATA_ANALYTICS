@@ -1,5 +1,5 @@
 # EXCEL_PROJECT-DATA_ANALYTICS
-#Global Data Job Market Analysis & Dashboard
+# Global Data Job Market Analysis & Dashboard
 # Excel Salary Dashboard
 <img width="1900" height="982" alt="2026-06-18 (4)" src="https://github.com/user-attachments/assets/85a596da-3aae-40e0-9d34-4cc8feb9fd12" />
 
