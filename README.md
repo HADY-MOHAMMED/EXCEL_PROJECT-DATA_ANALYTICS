@@ -315,7 +315,8 @@ To keep the visual clean and focused on geographic market trends, I maintained t
 💰 High Pay, Low Volume: Countries like Sudan and Australia show strong median salaries (around $127k and $118k, respectively), but the actual number of job postings is extremely low compared to the US market.
 📉 Volume vs. Value: India offers the second-highest volume of job opportunities in this dataset but sits at a notably lower median salary point, showcasing a different market dynamic than Western regions.
 
-<img width="864" height="501" alt="ANA3" src="https://github.com/user-attachments/assets/5b29112f-a266-4db8-9b4e-9b092dfa1099" />
+<img width="652" height="478" alt="2026-06-19 (3)" src="https://github.com/user-attachments/assets/8c114110-8bed-4db3-a2f2-b59b7145447b" />
+
 
 ####  **🤔 So What**
 
