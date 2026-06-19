@@ -248,7 +248,35 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 
 ## 3️⃣ What are the top skills of data professionals?
 
-### 🔧 Skill: Power Pivot
+### 🔧 Skill:Power query & Power Pivot
+- I extracted the data using Power Query, where I appended all twelve monthly salary sheets into a single, consolidated dataset and create two queries:
+    - 🗃️ First one with all the data jobs information.
+    - 🔧 The second listing the skills for each job ID.
+
+#### 🔄 Transform
+
+- Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
+    - 📊 data_jobs_all
+    <img width="226" height="230" alt="powerquerym1" src="https://github.com/user-attachments/assets/81dd940d-7fa6-482a-b0d9-36ad9ef1f329" />
+
+
+    - 🛠️ data_job_skills
+
+       <img width="263" height="311" alt="powerquery12" src="https://github.com/user-attachments/assets/572f59ec-3251-46f5-87fd-6a7ec749863e" />
+
+
+#### 🔗 Load
+
+- Finally, I loaded both transformed queries into the workbook, setting the foundation for my subsequent analysis.
+    - 📊 data_jobs_all
+
+        <img width="1920" height="1042" alt="powerquerym" src="https://github.com/user-attachments/assets/a12759d7-abf2-43b0-bdb6-4c7d87861934" />
+
+
+    - 🛠️ data_job_skills
+
+      <img width="1920" height="1037" alt="powerquery" src="https://github.com/user-attachments/assets/4b5bd766-9993-4d86-8450-a98b39213c81" />
+
 
 #### 💪 Power Pivot
 
@@ -259,13 +287,14 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 
 - I created a relationship between my two tables using the `job_id` column.
 
-    ![2_Project_Analysis_Screenshot5.png](/0_Resources/Images/2_Project_Analysis_Screenshot5.png)
+<img width="708" height="645" alt="powerpivot" src="https://github.com/user-attachments/assets/b82d7b64-5e65-404a-a404-18dc86d48f9f" />
 
 #### 📃 Power Pivot Menu
 
 - The Power Pivot menu was used to refine my data model and makes it easy to create measures.
 
-    ![2_Project_Analysis_Screenshot6.png](/0_Resources/Images/2_Project_Analysis_Screenshot6.png)
+ <img width="1920" height="1017" alt="powerpivot2" src="https://github.com/user-attachments/assets/654d5d54-3127-4250-8c66-0f758f8292b8" />
+
 
 ### 📊Analysis
 
@@ -274,7 +303,9 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 - 💻 SQL and Python dominate as top skills in data-related jobs, reflecting their foundational role in data processing and analysis.
 - ☁️ Emerging technologies like AWS and Azure also show significant presence, underlining the industry's shift towards cloud services and big data technologies.
 
-    ![2_Project_Analysis_Chart3.png](/0_Resources/Images/2_Project_Analysis_Chart3.png)
+   <img width="623" height="394" alt="ANAP21" src="https://github.com/user-attachments/assets/67225187-bf24-4a6e-8361-443c473f8867" />
+
+
 
 #### 🤔So What
 
