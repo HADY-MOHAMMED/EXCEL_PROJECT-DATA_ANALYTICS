@@ -234,7 +234,7 @@ It includes detailed information on:
 
 #### 📈 PivotChart
 
-- I created a combo PivotChart from my PivotTable in ASAP1.PNG to visualize the relationship between financial return and market frequency for the top 10 data science skills.
+- I created a combo PivotChart from my PivotTable to visualize the relationship between financial return and market frequency for the top 10 data science skills.
 
 Primary Axis: Median Salary (as a Clustered Column) sorted in descending order to instantly isolate the highest-paying technologies.
 
@@ -248,7 +248,7 @@ To customize the visual, I adjusted the dual-axis scales to ensure both metrics 
 
 ⚖️ The High-Volume Powerhouses: Python and SQL stand out as incredible value drivers—maintaining very high median salaries while supporting a massive volume of market opportunities (each exceeding 17,500+ job postings).
 
-📉 The Baseline Floor: Traditional spreadsheet software like Excel sits at the bottom of the top 10 list, proving that while it remains highly relevant in volume (6,258 postings), it does not carry the same financial leverage as programming or cloud infrastructure.
+📉 The Baseline Floor: Traditional spreadsheet software like Excel sits at the bottom of the top 10 list, proving that while it remains highly relevant in volume (More than 6k postings), it does not carry the same financial leverage as programming or cloud infrastructure.
   <img width="614" height="364" alt="ASAP3" src="https://github.com/user-attachments/assets/b12743b2-bd09-49ca-b96b-3eda4b278d89" />
 
 
