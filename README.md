@@ -1,6 +1,6 @@
 # EXCEL_PROJECT-DATA_ANALYTICS
 # Global Data Job Market Analysis & Dashboard
-# Excel Salary Dashboard
+# Project 1 Excel Salary Dashboard
 <img width="1900" height="982" alt="2026-06-18 (4)" src="https://github.com/user-attachments/assets/85a596da-3aae-40e0-9d34-4cc8feb9fd12" />
 
 
@@ -128,10 +128,10 @@ As a former job seeker, I’ve always been surprised by the lack of data explori
 
 To understand the data science job market, I asked the following:
 
-1. **What are the top skills of data science?**
-2. **Which categories yield the highest return relative to their market frequency?**
-3. **What are the top skills of data professionals?**
-4. **What’s the pay for the top 10 skills?**
+1. **What are the top skills of data professionals?**
+2. **What’s the pay for the top 10 skills?**
+3. **Which categories yield the highest return relative to their market frequency?**
+4. **Where is the opportunity versus where is the money?**
 
 ### Excel Skills Used
 
@@ -154,99 +154,8 @@ It includes detailed information on:
 - **📍 Locations**
 - **🛠️ Skills**
 
-## 1️⃣ What are the top skills of data science?
 
-### 🔍 Skill: Power Query (ETL)
-
-#### 📥 Extract
-
-- I extracted the data using Power Query, where I appended all twelve monthly salary sheets into a single, consolidated dataset and create two queries:
-    - 🗃️ First one with all the data jobs information.
-    - 🔧 The second listing the skills for each job ID.
-
-#### 🔄 Transform
-
-- Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
-    - 📊 data_jobs_all
-    <img width="226" height="230" alt="powerquerym1" src="https://github.com/user-attachments/assets/81dd940d-7fa6-482a-b0d9-36ad9ef1f329" />
-
-
-    - 🛠️ data_job_skills
-
-       <img width="263" height="311" alt="powerquery12" src="https://github.com/user-attachments/assets/572f59ec-3251-46f5-87fd-6a7ec749863e" />
-
-
-#### 🔗 Load
-
-- Finally, I loaded both transformed queries into the workbook, setting the foundation for my subsequent analysis.
-    - 📊 data_jobs_all
-
-        <img width="1920" height="1042" alt="powerquerym" src="https://github.com/user-attachments/assets/a12759d7-abf2-43b0-bdb6-4c7d87861934" />
-
-
-    - 🛠️ data_job_skills
-
-      <img width="1920" height="1037" alt="powerquery" src="https://github.com/user-attachments/assets/4b5bd766-9993-4d86-8450-a98b39213c81" />
-
-
-### 📊 Analysis
-
-#### 💡 Insights
-
-- 👑 The Core Duopoly: SQL (18,500 jobs) and Python (17,689 jobs) heavily dominate the data science ecosystem, appearing in nearly triple the number of job postings compared to the next closest tool.
-
-📊 The Mid-Tier Essentials: A highly competitive group composed of Tableau (7,013 jobs), R (6,929 jobs), and AWS (6,842 jobs) follows, showcasing a balanced market demand across data visualization, statistical programming, and cloud infrastructure.
-
-📈 Legacy vs. Big Data: Traditional data tools like Excel (6,258 jobs) still maintain a strong baseline presence, but are closely accompanied by specialized enterprise big data frameworks like Spark (5,274 jobs) and Azure (4,760 jobs).
-
-   <img width="623" height="394" alt="ANAP21" src="https://github.com/user-attachments/assets/cf795a1f-3818-4f59-af48-69e8513e30d9" />
-
-
-#### 🤔 So What
-This chart serves as a direct prioritization roadmap for a data professional's learning path. It clearly demonstrates that while mastering niche or advanced cloud architectures is highly valuable, building an airtight foundation in SQL and Python is an absolute non-negotiable step for baseline marketability, as they form the operational backbone of the vast majority of open market roles.
-
-## 2️⃣ Which categories yield the highest return relative to their market frequency?
-
-### 🧮 Skills: PivotTables & DAX
-
-#### 📈Pivot Table
-
-- 🔢 I created a PivotTable using the Data Model I created with Power Pivot.
-- 📊 I moved the `job_title_short` to the rows area.
-- 🧮 Then I added new measure to calculate the median salary 
-    
-#### 🧮 DAX
-
-- To calculate the median year salary I used DAX.
-
-    ```
-    Median Salary := MEDIAN(data_jobs_all[salary_year_avg])
-    ```
-###📈 PivotChart
-
-I created a combo PivotChart to plot median salary and job count by job title from my PivotTable.
-🪙 Primary Axis: Median Salary (as a Clustered Column)
-👍 Secondary Axis: Job Count (as Diamond Markers)
-To customize the chart, I added axis titles, removed the connecting lines for the job count series to isolate the individual data points, and sorted the job titles in descending order by median salary to clearly display the highest-paying roles.
-
-###📊 Analysis
-
-####💡 Insights
-
--💎 The Seniority Premium: Senior Data Scientist ($155,000) and Senior Data Engineer ($148,750) command the highest median salaries in the dataset, illustrating the substantial financial reward for advanced, specialized expertise.
-
-⚖️ The Volume "Sweet Spot": Data Scientist ($127,500) and Data Engineer ($125,000) roles offer the most optimal balance in the market, delivering top-tier compensation while maintaining high job availability (between 6,700 and 8,500+ postings).
-
-📉 High Demand, Baseline Pay: Data Analyst roles dominate the market in sheer volume with 9,606 postings, yet they sit near the lower end of the salary spectrum at a median of $90,000, proving that high market frequency does not always equal premium value.
-
-<img width="961" height="494" alt="ANA2" src="https://github.com/user-attachments/assets/7b601f78-e914-41ee-a3e3-b475b856612a" />
-
-
-#### **🤔 So What**
-
-- This chart serves as a career roadmap for data professionals. It visually proves that while generalist entry-level positions like Data Analyst offer the most abundant job openings, long-term career growth and maximum earning potential depend on deliberate upskilling into specialized domains like Data Engineering and Data Science
-
-## 3️⃣ What are the top skills of data professionals?
+## 1️⃣ What are the top skills of data professionals?
 
 ### 🔧 Skill:Power query & Power Pivot
 - I extracted the data using Power Query, where I appended all twelve monthly salary sheets into a single, consolidated dataset and create two queries:
@@ -311,7 +220,7 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 
 - Understanding prevalent skills in the industry not only helps professionals stay competitive but also guides training and educational programs to focus on the most impactful technologies.
 
-## 4️⃣ What’s the pay of the top 10 skills?
+## 2️⃣ What’s the pay of the top 10 skills?
 
 ### 📊 Skill: Advanced Charts (Pivot Chart)
 
@@ -335,3 +244,68 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 ### 🤔So What
 
 - This chart highlights the importance of investing time in learning high-value skills like Python and SQL, which are evidently tied to higher paying roles, especially for those looking to maximize their salary in the tech industry.
+  
+## 3️⃣ Which categories yield the highest return relative to their market frequency?
+
+### 🧮 Skills: PivotTables & DAX
+
+#### 📈Pivot Table
+
+- 🔢 I created a PivotTable using the Data Model I created with Power Pivot.
+- 📊 I moved the `job_title_short` to the rows area.
+- 🧮 Then I added new measure to calculate the median salary 
+    
+#### 🧮 DAX
+
+- To calculate the median year salary I used DAX.
+
+    ```
+    Median Salary := MEDIAN(data_jobs_all[salary_year_avg])
+    ```
+### 📈 PivotChart
+
+I created a combo PivotChart to plot median salary and job count by job title from my PivotTable.
+🪙 Primary Axis: Median Salary (as a Clustered Column)
+👍 Secondary Axis: Job Count (as Diamond Markers)
+To customize the chart, I added axis titles, removed the connecting lines for the job count series to isolate the individual data points, and sorted the job titles in descending order by median salary to clearly display the highest-paying roles.
+
+### 📊 Analysis
+
+#### 💡 Insights
+
+-💎 The Seniority Premium: Senior Data Scientist ($155,000) and Senior Data Engineer ($148,750) command the highest median salaries in the dataset, illustrating the substantial financial reward for advanced, specialized expertise.
+
+⚖️ The Volume "Sweet Spot": Data Scientist ($127,500) and Data Engineer ($125,000) roles offer the most optimal balance in the market, delivering top-tier compensation while maintaining high job availability (between 6,700 and 8,500+ postings).
+
+📉 High Demand, Baseline Pay: Data Analyst roles dominate the market in sheer volume with 9,606 postings, yet they sit near the lower end of the salary spectrum at a median of $90,000, proving that high market frequency does not always equal premium value.
+
+<img width="961" height="494" alt="ANA2" src="https://github.com/user-attachments/assets/7b601f78-e914-41ee-a3e3-b475b856612a" />
+
+
+#### **🤔 So What**
+
+- This chart serves as a career roadmap for data professionals. It visually proves that while generalist entry-level positions like Data Analyst offer the most abundant job openings, long-term career growth and maximum earning potential depend on deliberate upskilling into specialized domains like Data Engineering and Data Science
+
+## 4️⃣ Where is the opportunity versus where is the money?
+📊 Skill: Advanced Charts (Combo PivotChart)
+
+📈 Combo PivotChart
+
+📊 I created a second combo PivotChart to plot median salary and job count based on geographic location.
+🪙 Primary Axis: Median Salary (as a Clustered Column) to visualize the earning potential across different countries.
+👍 Secondary Axis: Job Count (as a Line) to represent the volume of available opportunities in those regions.
+To keep the visual clean and focused on geographic market trends, I maintained the continuous line for the job count series to illustrate the dramatic drop-off in opportunities outside the primary market.
+
+📊 Analysis
+
+💡 Insights
+
+🗺️ Unmatched Volume: The United States completely dominates the global data job market in terms of sheer volume (over 25,000 jobs) while maintaining a highly competitive median salary (nearly $120k).
+💰 High Pay, Low Volume: Countries like Sudan and Australia show strong median salaries (around $127k and $118k, respectively), but the actual number of job postings is extremely low compared to the US market.
+📉 Volume vs. Value: India offers the second-highest volume of job opportunities in this dataset but sits at a notably lower median salary point, showcasing a different market dynamic than Western regions.
+
+<img width="864" height="501" alt="ANA3" src="https://github.com/user-attachments/assets/5b29112f-a266-4db8-9b4e-9b092dfa1099" />
+
+####  **🤔 So What**
+
+This chart is vital for understanding geographical market dynamics, especially for remote work planning or targeting specific regions for employment. It highlights that while competitive salaries exist globally, the United States remains the undisputed hub for the highest concentration of lucrative data roles. Presenting clear, actionable geographic insights like this demonstrates a strong ability to translate raw global data into strategic business intelligence for future freelance clients.
