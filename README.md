@@ -173,11 +173,11 @@ It includes detailed information on:
 #### 🔄 Transform
 
 - Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
-    - 📊 data_jobs_all
+    - 📊 ALL_JOBS
     <img width="226" height="230" alt="powerquerym1" src="https://github.com/user-attachments/assets/81dd940d-7fa6-482a-b0d9-36ad9ef1f329" />
 
 
-    - 🛠️ data_job_skills
+    - 🛠️ JOB_SKILLS
 
        <img width="263" height="311" alt="powerquery12" src="https://github.com/user-attachments/assets/572f59ec-3251-46f5-87fd-6a7ec749863e" />
 
@@ -185,24 +185,24 @@ It includes detailed information on:
 #### 🔗 Load
 
 - Finally, I loaded both transformed queries into the workbook, setting the foundation for my subsequent analysis.
-    - 📊 data_jobs_all
+    - 📊 ALL_JOBS
 
         <img width="1920" height="1042" alt="powerquerym" src="https://github.com/user-attachments/assets/a12759d7-abf2-43b0-bdb6-4c7d87861934" />
 
 
-    - 🛠️ data_job_skills
+    - 🛠️ JOB_SKILLS
 
       <img width="1920" height="1037" alt="powerquery" src="https://github.com/user-attachments/assets/4b5bd766-9993-4d86-8450-a98b39213c81" />
 
 
 #### 💪 Power Pivot
 
-- 🔗 I created a data model by integrating the `data_jobs_all` and `data_jobs_skills` tables into one model.
+- 🔗 I created a data model by integrating the `ALL_JOBS` and `JOB_SKILLS` tables into one model.
 - 🧹 Since I had already cleaned the data using Power Query; Power Pivot created a relationship between these two tables.
 
 #### 🔗 Data Model
 
-- I created a relationship between my two tables using the `job_id` column.
+- I created a relationship between my two tables using the `JOB_ID` column.
 
 <img width="708" height="645" alt="powerpivot" src="https://github.com/user-attachments/assets/b82d7b64-5e65-404a-a404-18dc86d48f9f" />
 
@@ -234,18 +234,21 @@ It includes detailed information on:
 
 #### 📈 PivotChart
 
-- I created a combo PivotChart to plot median salary and skill likelihood (%) from my PivotTable.
-    - 🪙 **Primary Axis:** Median Salary (as a Clustered Column)
-    - 👍 **Secondary Axis:** Skill Likelihood (as a Line with Markers)
-- To customize the chart, I added a title axis title, removed the lines (skill likelihood), and changed the markers to diamonds.
+- I created a combo PivotChart from my PivotTable in ASAP1.PNG to visualize the relationship between financial return and market frequency for the top 10 data science skills.
 
+Primary Axis: Median Salary (as a Clustered Column) sorted in descending order to instantly isolate the highest-paying technologies.
+
+Secondary Axis: Job Count (as a Continuous Line) to overlay market demand across those same skills.
+To customize the visual, I adjusted the dual-axis scales to ensure both metrics are easily readable without crowding, creating a clear contrast between high-volume tools and premium niche skills.
 ### 📊 Analysis
 
 #### 💡Insights
 
-- 💰 Higher median salaries are associated with skills like Python, Oracle, and SQL, suggesting their critical role in high-paying tech jobs.
-- 📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
+- 💰 The Cloud & Big Data Premium: Specialized skills like Spark, AWS, and Java command the highest median salaries in the dataset, despite having lower relative job volumes.
 
+⚖️ The High-Volume Powerhouses: Python and SQL stand out as incredible value drivers—maintaining very high median salaries while supporting a massive volume of market opportunities (each exceeding 17,500+ job postings).
+
+📉 The Baseline Floor: Traditional spreadsheet software like Excel sits at the bottom of the top 10 list, proving that while it remains highly relevant in volume (6,258 postings), it does not carry the same financial leverage as programming or cloud infrastructure.
   <img width="614" height="364" alt="ASAP3" src="https://github.com/user-attachments/assets/b12743b2-bd09-49ca-b96b-3eda4b278d89" />
 
 
@@ -281,11 +284,10 @@ To customize the chart, I added axis titles, removed the connecting lines for th
 
 #### 💡 Insights
 
--💎 The Seniority Premium: Senior Data Scientist ($155,000) and Senior Data Engineer ($148,750) command the highest median salaries in the dataset, illustrating the substantial financial reward for advanced, specialized expertise.
+-💎 The Seniority Premium: Senior Data Scientist and Senior Data Engineer command the highest median salaries in the dataset, illustrating the substantial financial reward for advanced, specialized expertise.
 
-⚖️ The Volume "Sweet Spot": Data Scientist ($127,500) and Data Engineer ($125,000) roles offer the most optimal balance in the market, delivering top-tier compensation while maintaining high job availability (between 6,700 and 8,500+ postings).
-
-📉 High Demand, Baseline Pay: Data Analyst roles dominate the market in sheer volume with 9,606 postings, yet they sit near the lower end of the salary spectrum at a median of $90,000, proving that high market frequency does not always equal premium value.
+⚖️ The Volume "Sweet Spot": Data Scientist and Data Engineer roles offer the most optimal balance in the market, delivering top-tier compensation while maintaining high job availability.
+📉 High Demand, Baseline Pay: Data Analyst roles dominate the market in sheer volume with more than 9k postings, yet they sit near the lower end of the salary spectrum at a median of $90,000, proving that high market frequency does not always equal premium value.
 
 <img width="961" height="494" alt="ANA2" src="https://github.com/user-attachments/assets/7b601f78-e914-41ee-a3e3-b475b856612a" />
 
