@@ -220,7 +220,8 @@ It includes detailed information on:
 - 💻 SQL and Python dominate as top skills in data-related jobs, reflecting their foundational role in data processing and analysis.
 - ☁️ Emerging technologies like AWS and Azure also show significant presence, underlining the industry's shift towards cloud services and big data technologies.
 
-   <img width="623" height="394" alt="ANAP21" src="https://github.com/user-attachments/assets/67225187-bf24-4a6e-8361-443c473f8867" />
+   <img width="621" height="404" alt="2026-06-19 (18)" src="https://github.com/user-attachments/assets/f55f71c1-53da-4a42-81ed-1d3b669e849f" />
+
 
 
 
