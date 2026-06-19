@@ -2,8 +2,8 @@
 
 # Excel Salary Dashboard
 
-![1_Salary_Dashboard.png](<img width="522" height="439" alt="country" src="https://github.com/user-attachments/assets/4f57285d-d37f-4d2c-ab69-9ae7b8bc020d" />
-)
+<img width="522" height="439" alt="country" src="https://github.com/user-attachments/assets/74add903-9784-486d-9582-c111d87c786c" />
+
 
 ## Introduction
 
