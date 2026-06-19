@@ -129,7 +129,7 @@ As a former job seeker, I’ve always been surprised by the lack of data explori
 To understand the data science job market, I asked the following:
 
 1. **What are the top skills of data science?**
-2. **What’s the salary for data jobs in different regions?**
+2. **Which categories yield the highest return relative to their market frequency?**
 3. **What are the top skills of data professionals?**
 4. **What’s the pay for the top 10 skills?**
 
@@ -205,21 +205,16 @@ It includes detailed information on:
 #### 🤔 So What
 This chart serves as a direct prioritization roadmap for a data professional's learning path. It clearly demonstrates that while mastering niche or advanced cloud architectures is highly valuable, building an airtight foundation in SQL and Python is an absolute non-negotiable step for baseline marketability, as they form the operational backbone of the vast majority of open market roles.
 
-## 2️⃣ What’s the salary for data jobs in different regions?
+## 2️⃣ Which categories yield the highest return relative to their market frequency?
 
 ### 🧮 Skills: PivotTables & DAX
 
 #### 📈Pivot Table
 
 - 🔢 I created a PivotTable using the Data Model I created with Power Pivot.
-- 📊 I moved the `job_title_short` to the rows area and `salary_year_avg` into the values area.
-- 🧮 Then I added new measure to calculate the median salary for United States jobs.
-    ```
-    =CALCULATE(
-        MEDIAN(data_jobs_all[salary_year_avg]),
-        data_jobs_all[job_country] = "United States")
-    ```
-
+- 📊 I moved the `job_title_short` to the rows area.
+- 🧮 Then I added new measure to calculate the median salary 
+    
 #### 🧮 DAX
 
 - To calculate the median year salary I used DAX.
@@ -227,19 +222,29 @@ This chart serves as a direct prioritization roadmap for a data professional's l
     ```
     Median Salary := MEDIAN(data_jobs_all[salary_year_avg])
     ```
+###📈 PivotChart
 
-### 📊 Analysis
+I created a combo PivotChart to plot median salary and job count by job title from my PivotTable.
+🪙 Primary Axis: Median Salary (as a Clustered Column)
+👍 Secondary Axis: Job Count (as Diamond Markers)
+To customize the chart, I added axis titles, removed the connecting lines for the job count series to isolate the individual data points, and sorted the job titles in descending order by median salary to clearly display the highest-paying roles.
 
-#### 💡 Insights
+###📊 Analysis
 
-- 💼 Job roles like Senior Data Engineer and Data Scientist command higher median salaries both in the US and internationally, showcasing the global demand for high-level data expertise.
-- 💰 The salary disparity between US and Non-US roles is particularly notable in high-tech jobs, which might be influenced by the concentration of tech industries in the US.
+####💡 Insights
 
-    ![2_Project_Analysis_Chart2.png](/0_Resources/Images/2_Project_Analysis_Chart2.png)
+-💎 The Seniority Premium: Senior Data Scientist ($155,000) and Senior Data Engineer ($148,750) command the highest median salaries in the dataset, illustrating the substantial financial reward for advanced, specialized expertise.
+
+⚖️ The Volume "Sweet Spot": Data Scientist ($127,500) and Data Engineer ($125,000) roles offer the most optimal balance in the market, delivering top-tier compensation while maintaining high job availability (between 6,700 and 8,500+ postings).
+
+📉 High Demand, Baseline Pay: Data Analyst roles dominate the market in sheer volume with 9,606 postings, yet they sit near the lower end of the salary spectrum at a median of $90,000, proving that high market frequency does not always equal premium value.
+
+<img width="961" height="494" alt="ANA2" src="https://github.com/user-attachments/assets/7b601f78-e914-41ee-a3e3-b475b856612a" />
+
 
 #### **🤔 So What**
 
-- These salary insights are important for planning and salary negotiations, helping professionals and companies align their offers with market standards while considering geographical variations.
+- This chart serves as a career roadmap for data professionals. It visually proves that while generalist entry-level positions like Data Analyst offer the most abundant job openings, long-term career growth and maximum earning potential depend on deliberate upskilling into specialized domains like Data Engineering and Data Science
 
 ## 3️⃣ What are the top skills of data professionals?
 
