@@ -1,6 +1,6 @@
 # EXCEL_PROJECT-DATA_ANALYTICS
 # Global Data Job Market Analysis & Dashboard
-###  This project analyzes a comprehensive dataset of 30,672 global tech job postings from 2023 to uncover key market dynamics. Using Power Query, I extracted and appended twelve monthly salary sheets into a single, consolidated data model. This analysis explores the direct correlations between job titles, geographic locations, data skills, and median compensation, serving as a data-driven blueprint for understanding career trajectories in data science.
+###  This project analyzes a comprehensive dataset of 30,672 global DATA SCIENCE job postings from 2023 to uncover key market dynamics. Using Power Query, I extracted and appended twelve monthly salary sheets into a single, consolidated data model. This analysis explores the direct correlations between job titles, geographic locations, data skills, and median compensation, serving as a data-driven blueprint for understanding career trajectories in data science.
 # Project 1 Excel Salary Dashboard
 <img width="1798" height="785" alt="1" src="https://github.com/user-attachments/assets/4e255d1b-2842-4ad6-9ae8-421e9aa97799" />
 
