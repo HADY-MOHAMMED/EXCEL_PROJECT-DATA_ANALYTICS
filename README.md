@@ -1,8 +1,7 @@
 # EXCEL_PROJECT-DATA_ANALYTICS
 
 # Excel Salary Dashboard
-
-<img width="522" height="439" alt="country" src="https://github.com/user-attachments/assets/74add903-9784-486d-9582-c111d87c786c" />
+<img width="1900" height="982" alt="2026-06-18 (4)" src="https://github.com/user-attachments/assets/85a596da-3aae-40e0-9d34-4cc8feb9fd12" />
 
 
 ## Introduction
