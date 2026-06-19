@@ -78,8 +78,8 @@ IF(
 - **🔢 Formula Purpose:** This formula populates the table below, returning the median salary based on job title, country, and type specified.
 
 🍽️ Background Table
-<img width="1042" height="665" alt="median" src="https://github.com/user-attachments/assets/8ac3d34e-b0d5-427c-8119-6a8e1db2d2d6" />
 
+<img width="1042" height="457" alt="median" src="https://github.com/user-attachments/assets/c525d3f3-c6d2-42a8-96d5-76f0e4c1e20b" />
 
 📉 Dashboard Implementation
 
@@ -89,7 +89,7 @@ IF(
 #### ⏰ Count of Job Schedule Type
 
 ```
-=FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
+=FILTER(A2#,(NOT(ISNUMBER(SEARCH("and",A2#))+ISNUMBER(SEARCH(",",A2#))))*(A2#<>0))
 ```
 
 - 🔍 **Unique List Generation:** This Excel formula below employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
@@ -102,6 +102,7 @@ IF(
 
 📉 Dashboard Implementation:
 
+<img width="572" height="752" alt="type im" src="https://github.com/user-attachments/assets/6fc40bcf-384b-472c-b632-7589c3623866" />
 
 ### ❎ Data Validation
 
