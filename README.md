@@ -36,7 +36,8 @@ The dataset used for this project contains real-world data science job informati
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-<img width="579" height="448" alt="job title" src="https://github.com/user-attachments/assets/2e083372-6669-4cd3-8c48-a0c28d5103c8" />
+<img width="599" height="375" alt="job title" src="https://github.com/user-attachments/assets/26b630ea-160d-4b24-9192-7a56fe90c6ca" />
+
 
 
 - 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
@@ -62,9 +63,9 @@ The dataset used for this project contains real-world data science job informati
 ```
 =MEDIAN(
 IF(
-    (jobs[job_title_short]=A2)*
-    (jobs[job_country]=country)*
-    (ISNUMBER(SEARCH(type,jobs[job_schedule_type])))*
+    (jobs[job_title_short]=$B2)*
+    (jobs[job_country]=COUNTRY)*
+    (ISNUMBER(SEARCH(TYPE,jobs[job_schedule_type])))*
     (jobs[salary_year_avg]<>0),
     jobs[salary_year_avg]
 )
@@ -96,11 +97,11 @@ IF(
 
 🍽️ Background Table
 
-![1_Salary_Dashboard_Type.png](/0_Resources/Images/1_Salary_Dashboard_Screenshot2.png)
+<img width="774" height="724" alt="filter" src="https://github.com/user-attachments/assets/37eab13a-20bc-4a46-a4ed-08b53ed994c5" />
+
 
 📉 Dashboard Implementation:
 
-<img src="/0_Resources/Images/1_Salary_Dashboard_Type.png" width="350" height="500" alt="Salary Dashboard Type">
 
 ### ❎ Data Validation
 
